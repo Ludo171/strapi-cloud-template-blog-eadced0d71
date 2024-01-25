@@ -1,27 +1,25 @@
 {
   "dependencies": {
     "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.13.6",
+    "@strapi/plugin-users-permissions": "4.13.6",
+    "@strapi/strapi": "4.13.6",
+    "add": "^2.0.6",
+    "better-sqlite3": "8.5.0",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
-    "@strapi/strapi": "4.13.6",
-    "@strapi/plugin-users-permissions": "4.13.6",
-    "@strapi/plugin-i18n": "4.13.6",
-    "better-sqlite3": "8.5.0"
+    "strapi-plugin-sitemap": "^3.0.8"
   },
-  "name": "my-app-name",
+  "name": "sevetys-fr-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "The CMS content server of Sevetys.fr",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "author": {
-    "name": "A Strapi developer"
   },
   "strapi": {
     "template": "blog"

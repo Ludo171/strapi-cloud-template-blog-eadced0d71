@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_articles",
+  "info": {
+    "singularName": "blog-article",
+    "pluralName": "blog-articles",
+    "displayName": "BlogArticle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "mainImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo-friendly-image"
+    },
+    "seoMetadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "veterinaries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::veterinary.veterinary"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq-structured-data"
+    },
+    "relatedArticles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-article.blog-article"
+    },
+    "summary": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "collectionName": "components_shared_sliders",
   "info": {
-    "displayName": "Slider",
-    "icon": "address-book",
+    "displayName": "MediaCarousel",
+    "icon": "dashboard",
     "description": ""
   },
   "options": {},

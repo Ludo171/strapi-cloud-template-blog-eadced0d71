@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_faq_structured_data_s",
+  "info": {
+    "displayName": "FAQ (structuredData)"
+  },
+  "options": {},
+  "attributes": {
+    "structuredData": {
+      "type": "json"
+    }
+  }
+}

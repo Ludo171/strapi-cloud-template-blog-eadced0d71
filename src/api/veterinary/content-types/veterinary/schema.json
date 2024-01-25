@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "veterinaries",
+  "info": {
+    "singularName": "veterinary",
+    "pluralName": "veterinaries",
+    "displayName": "Veterinary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "profilePicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "veterinarySevetysId": {
+      "type": "uid"
+    }
+  }
+}
